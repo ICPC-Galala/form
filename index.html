@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#102b63" />
+  <meta name="description" content="Student registration for GALALA ICPC COMMUNITY." />
+  <title>Student Registration | GALALA ICPC COMMUNITY</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-decoration decoration-left" aria-hidden="true"><span class="code-mark">&lt;/&gt;</span><span class="tiny-squares"></span></div>
+  <div class="page-decoration decoration-right" aria-hidden="true"><span class="star">✧</span><span class="trophy">☆</span></div>
+
+  <main class="site-shell">
+    <header class="cover-wrap">
+      <img class="cover" src="galala-cover.png" alt="GALALA ICPC COMMUNITY mountain cover" />
+      <div class="logo-medallion"><img src="galala-logo.png" alt="GALALA ICPC COMMUNITY logo" /></div>
+    </header>
+
+    <section class="form-panel" aria-labelledby="form-title">
+      <div class="panel-accent" aria-hidden="true"></div>
+      <div class="eyebrow"><span class="eyebrow-line"></span> GALALA ICPC COMMUNITY <span class="eyebrow-line"></span></div>
+      <h1 id="form-title">Student Registration</h1>
+      <p class="intro">Welcome to Galala ICPC Community. Complete the form below with accurate information so we can keep our student records organized.</p>
+      <div class="brand-rule"><span></span><span></span><span></span></div>
+
+      <form id="registration-form">
+        <div class="field">
+          <label for="fullName">Full Name<b>*</b></label>
+          <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="Enter your full name" minlength="2" required />
+        </div>
+        <div class="field">
+          <label for="universityId">University ID<b>*</b></label>
+          <input id="universityId" name="universityId" type="text" inputmode="text" autocomplete="off" placeholder="Enter your university ID" required />
+        </div>
+        <div class="field">
+          <label for="universityEmail">University Email Address<b>*</b></label>
+          <input id="universityEmail" name="universityEmail" type="email" autocomplete="email" placeholder="user@gu.edu.eg" required />
+        </div>
+        <div class="field">
+          <label for="academicYear">Academic Year<b>*</b></label>
+          <div class="select-wrap"><select id="academicYear" name="academicYear" required><option value="" disabled selected>Select your academic year</option><option>First Year</option><option>Second Year</option><option>Third Year</option><option>Fourth Year</option><option>Fifth Year</option><option>Other</option></select></div>
+        </div>
+        <div class="field">
+          <label for="age">Age<b>*</b></label>
+          <input id="age" name="age" type="number" min="17" max="80" step="1" inputmode="numeric" placeholder="Age in completed years" required />
+        </div>
+        <div class="field">
+          <label for="mobile">Mobile Number (WhatsApp)<b>*</b></label>
+          <input id="mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" placeholder="e.g. +20 1X XXXX XXXX" pattern="[+0-9() .-]{7,25}" required />
+          <small>Enter the number registered on WhatsApp, including the country code (e.g. +20).</small>
+        </div>
+
+        <div class="privacy-note"><span class="lock-icon" aria-hidden="true">●</span><p>Your information will be used for Galala ICPC Community registration and communication only. Please make sure your contact details are correct.</p></div>
+        <button id="submit-button" type="submit"><span>Submit Registration</span><span class="button-arrow" aria-hidden="true">→</span></button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <footer class="form-footer"><span class="footer-mountain" aria-hidden="true">⌁</span> Built for problem solvers. Made by the Galala ICPC Team. <span class="footer-dot"></span></footer>
+    </section>
+
+    <section id="success-panel" class="form-panel success-panel" aria-labelledby="success-title" hidden>
+      <div class="panel-accent" aria-hidden="true"></div>
+      <div class="eyebrow"><span class="eyebrow-line"></span> GALALA ICPC COMMUNITY <span class="eyebrow-line"></span></div>
+      <div class="success-heading">
+        <div class="success-mark" aria-hidden="true">✓</div>
+        <h1 id="success-title">Registration Successful!</h1>
+      </div>
+      <p class="intro">You have successfully registered for the GALALA ICPC COMMUNITY. Join our platforms using the links below.</p>
+      <div class="success-links">
+        <a href="https://classroom.google.com/c/ODg4Njc1Nzk3Mjg4?cjc=5e5w4j22" target="_blank" rel="noopener noreferrer">Join Google Classroom <span aria-hidden="true">↗</span></a>
+        <a href="https://chat.whatsapp.com/JIGOXmgmrb4IFCjjOHY9TM?mode=gi_t" target="_blank" rel="noopener noreferrer">Join WhatsApp Group <span aria-hidden="true">↗</span></a>
+      </div>
+      <footer class="form-footer"><span class="footer-mountain" aria-hidden="true">⌁</span> Built for problem solvers. Made by the Galala ICPC Team. <span class="footer-dot"></span></footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
